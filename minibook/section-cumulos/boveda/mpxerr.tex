@@ -1,0 +1,79 @@
+%&latex
+\documentclass{minimal}
+    \usepackage{amsmath,amssymb}
+\begin{document}
+
+\gdef\mpxshipout{\shipout\hbox\bgroup%
+  \setbox0=\hbox\bgroup}%
+\gdef\stopmpxshipout{\egroup  \dimen0=\ht0 \advance\dimen0\dp0
+  \dimen1=\ht0 \dimen2=\dp0
+  \setbox0=\hbox\bgroup
+    \box0
+    \ifnum\dimen0>0 \vrule width1sp height\dimen1 depth\dimen2 
+    \else \vrule width1sp height1sp depth0sp\relax
+    \fi\egroup
+  \ht0=0pt \dp0=0pt \box0 \egroup}
+\mpxshipout% line 49 ./funB2.mp
+{\usefont{OT1}{cmtt}{m}{n} }%
+\stopmpxshipout
+\mpxshipout% line 59 ./funB2.mp
+{\usefont{OT1}{cmtt}{m}{n} }%
+\stopmpxshipout
+\mpxshipout% line 74 ./funB2.mp
+{\usefont{OT1}{cmtt}{m}{n} }%
+\stopmpxshipout
+\mpxshipout% line 87 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} Yes}%
+\stopmpxshipout
+\mpxshipout% line 100 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} No}%
+\stopmpxshipout
+\mpxshipout% line 110 ./funB2.mp
+{\usefont{OT1}{cmtt}{m}{n} }%
+\stopmpxshipout
+\mpxshipout% line 142 ./funB2.mp
+{\usefont{OT1}{cmtt}{m}{n} }%
+\stopmpxshipout
+\mpxshipout% line 144 ./funB2.mp
+{\usefont{OT1}{phv}{b}{n} funB2(...)}%
+\stopmpxshipout
+\mpxshipout% line 146 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $lin\leq N_l\quad\&\quad\mathbf{m}_{c}(lin)==1$}%
+\stopmpxshipout
+\mpxshipout% line 148 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $\mathbf{g}_{c-1}$}%
+\stopmpxshipout
+\mpxshipout% line 150 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $\mathbf{m}_c$}%
+\stopmpxshipout
+\mpxshipout% line 152 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $lin$}%
+\stopmpxshipout
+\mpxshipout% line 154 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $L\leftarrow 0$}%
+\stopmpxshipout
+\mpxshipout% line 156 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $Set\leftarrow NULL$}%
+\stopmpxshipout
+\mpxshipout% line 158 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $lin$}%
+\stopmpxshipout
+\mpxshipout% line 160 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $L$}%
+\stopmpxshipout
+\mpxshipout% line 162 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $Set$}%
+\stopmpxshipout
+\mpxshipout% line 164 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $id\leftarrow\mathbf{g}_{c-1}$}%
+\stopmpxshipout
+\mpxshipout% line 166 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $Set.AddNoZero(id)$}%
+\stopmpxshipout
+\mpxshipout% line 168 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $lin\leftarrow\lin+1$}%
+\stopmpxshipout
+\mpxshipout% line 170 ./funB2.mp
+{\usefont{OT1}{phv}{m}{n} $L\leftarrow L+1$}%
+\stopmpxshipout
+\end{document}
